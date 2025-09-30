@@ -1,0 +1,39 @@
+# Environment Variables
+# Ignore the .env file to keep secrets out of version control.
+.env
+
+# Django
+# Ignore SQLite database files, as you are using PostgreSQL.
+db.sqlite3
+db.sqlite3-journal
+
+# Python
+# Ignore bytecode and compiled files.
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual Environment
+# Ignore virtual environment folders.
+venv/
+.venv/
+env/
+.env/
+
+# IDE / Editor specific files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS-specific files
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Static files
+# Typically, you don't want to commit collected static files.
+/staticfiles/
