@@ -37,3 +37,7 @@ Thumbs.db
 # Static files
 # Typically, you don't want to commit collected static files.
 /staticfiles/
+
+# Jupyter
+jupyter/
+
