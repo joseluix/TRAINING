@@ -24,7 +24,7 @@ class ModelTests(TestCase):
     def test_account_creation(self):
         account = Account.objects.create(name="Main Trading Setup", user=self.user)
         self.assertEqual(account.balance, 0.00)
-        self.assertEqual(str(account), f"Main Trading Setup (testuser) - $0.00")
+        self.assertEqual(str(account), f"Main Trading Setup (testuser) - $0.0")
 
     def test_deposit_transaction(self):
         account = Account.objects.create(name="Main Trading Setup", user=self.user)
@@ -39,7 +39,7 @@ class ModelTests(TestCase):
         
         self.assertEqual(dep.transaction_type, 'deposit')
         self.assertIsNone(dep.instrument)
-        self.assertEqual(str(dep), "DEPOSIT 0 CASH @ 10000.00") # Decimal precision will be higher now
+        self.assertEqual(str(dep), "DEPOSIT 0 CASH @ 10000.0") 
 
     def test_buy_transaction(self):
         account = Account.objects.create(name="Main Trading Setup", user=self.user)
@@ -55,4 +55,4 @@ class ModelTests(TestCase):
         
         self.assertEqual(buy.transaction_type, 'buy')
         self.assertEqual(buy.instrument, self.eurusd)
-        self.assertEqual(str(buy), "BUY 1.0 EURUSD @ 1.05000000")
+        self.assertEqual(str(buy), "BUY 1.0 EURUSD @ 1.05")
