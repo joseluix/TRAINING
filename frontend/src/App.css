@@ -1,0 +1,17 @@
+.app-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.card {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  color: #333;
+  /* Ensure text is dark since background is light */
+}
